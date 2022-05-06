@@ -1,0 +1,38 @@
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  width: 100%;
+  padding: 100px;
+}
+
+.footer__links-container {
+  width: 70%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__heading {
+  margin-bottom: 25px;
+}
+
+.footer__link {
+  margin: 5px 0;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__socials {
+  display: flex;
+}
+
+.footer__social {
+  margin: 0 5px;
+}

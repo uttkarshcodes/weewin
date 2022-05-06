@@ -1,0 +1,10 @@
+.tilted {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 100px;
+    transform: skewY(-2.5deg);
+}
+
+.tilted__content {
+    transform: skewY(2.5deg);
+}

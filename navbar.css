@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 25px;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  width: 100%;
+}
+
+.navbar__logo {
+  cursor: pointer;
+}
+
+.navbar__link {
+  margin: 0 25px;
+  position: relative;
+}
+
+.navbar__link:after {
+  content: "";
+  position: absolute;
+  background: var(--primary-color);
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0px;
+  transition: 0.2s linear;
+}
+
+.navbar__link:hover:after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navbar__links {
+    display: none;
+  }
+  .navbar__hamburger {
+      display: inline-block;
+  }
+}
