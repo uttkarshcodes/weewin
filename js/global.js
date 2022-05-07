@@ -1,4 +1,6 @@
-// const menu = document.getElementById('menu');
+AOS.init();
+// let links = document.getElementById('menu__links')
+const menu = document.getElementById('menu');
 const button = document.getElementById('button');
 let menuOpen = false;
 
@@ -22,12 +24,16 @@ button.addEventListener('click', () => {
     if (!menuOpen) {
         button.classList.add('open');
         menuOpen = true;
-        // menu.style.transform = 'translateX(0%)';
-        disableScroll();
+        menu.style.transform = 'translateY(0%)';
+        // links.style.transform = 'translateY(0%)';
+        // links.style.display = 'flex'
+        // disableScroll();
     } else {
         button.classList.remove('open');
         menuOpen = false;
-        // menu.style.transform = 'translateX(-100%)'
-        enableScroll();
+        menu.style.transform = 'translateY(-100%)'
+        // links.style.transform = 'translateY(-100%)'
+        // enableScroll();
+        // links.style.display = 'none'
     }
 })
