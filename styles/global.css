@@ -23,6 +23,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
 a:active {
@@ -144,6 +145,8 @@ a {
   transform: rotate(-45deg);
 }
 
+/* __MENU */
+
 #menu {
   background-color: #111;
   height: 100%;
@@ -229,9 +232,13 @@ width: 100%;
   justify-content: space-evenly;
 }
 
+.hero__text {
+  margin-left: 50px;
+
+}
+
 .hero__heading {
   font-size: 3rem;
-  margin-left: 50px;
   color: #878787;
   width: 600px;
 }
@@ -258,8 +265,64 @@ width: 100%;
 
 /* MEDIA QUERRIES */
 
-/* @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-} */
+
+/* NAVBAR */
+
+@media only screen and (max-width: 1000px) {
+  .navbar__links {
+    display: none;
+  }
+  #button {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .hero__content {
+    flex-direction: column-reverse;
+  }
+  .hero__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .hero__content {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero__heading {
+    width: auto;
+  }
+  .hero__content {
+    padding: 25px;
+  }
+  .hero__graphic {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .menu__links {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hero__graphic {
+    height: 400px;
+  }
+  .hero__heading {
+    font-size: 2rem;
+  }
+}
