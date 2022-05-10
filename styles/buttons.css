@@ -30,6 +30,6 @@
 }
 
 .button--filled:hover {
-  background-color: #111;
+  background-color: var(--tirtary-color);
   /* color: #111; */
 }

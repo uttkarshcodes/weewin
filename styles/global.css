@@ -13,7 +13,7 @@ html {
 :root {
   --primary-color: #f9f9f9;
   --secondary-color: #111;
-  --tirtary-color: ;
+  --tirtary-color: #7148e6;
 }
 
 /* ::selection {
@@ -23,7 +23,6 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
 }
 
 a:active {
@@ -55,6 +54,7 @@ a {
 
 .navbar__logo {
   cursor: pointer;
+  color: var(--tirtary-color);
 }
 
 .navbar__links {
@@ -234,13 +234,18 @@ width: 100%;
 
 .hero__text {
   margin-left: 50px;
-
 }
 
 .hero__heading {
   font-size: 3rem;
-  color: #878787;
+  color: var(--tirtary-color);
   width: 600px;
+}
+
+.hero__tagline {
+  margin-top: 10px;
+  color: #878787;
+  width: 500px;
 }
 
 .hero__graphic {
@@ -253,10 +258,6 @@ width: 100%;
 
 /* UTILITY CLASSES */
 
-.remove-list-style {
-  list-style: none;
-}
-
 .center {
   display: flex;
   align-items: center;
@@ -264,7 +265,6 @@ width: 100%;
 }
 
 /* MEDIA QUERRIES */
-
 
 /* NAVBAR */
 
@@ -298,31 +298,33 @@ width: 100%;
   .hero__content {
     padding-top: 50px;
   }
+  .hero__tagline {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .hero__heading {
     width: auto;
+    font-size: 2rem;
+  }
+  .hero__tagline {
+    width: auto;
+  }
+  .hero__graphic {
+    height: 400px;
   }
   .hero__content {
     padding: 25px;
   }
-  .hero__graphic {
-    height: 500px;
+  .navbar {
+    padding: 30px;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .menu__links {
     font-size: 4rem;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .hero__graphic {
-    height: 400px;
-  }
-  .hero__heading {
-    font-size: 2rem;
+    margin-left: 10%;
   }
 }
