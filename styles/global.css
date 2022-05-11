@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
 
 html {
   scroll-behavior: smooth;
@@ -238,6 +238,7 @@ width: 100%;
 
 .hero__heading {
   font-size: 3rem;
+  font-weight: 800;
   color: var(--tirtary-color);
   width: 600px;
 }
@@ -256,12 +257,26 @@ width: 100%;
   cursor: pointer;
 }
 
+/* SERVICES */
+
+.services__heading {
+
+}
+
+.services__para {
+  font-weight: 400;
+}
+
 /* UTILITY CLASSES */
 
 .center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.tag {
+  color: var(--tirtary-color);
 }
 
 /* MEDIA QUERRIES */
