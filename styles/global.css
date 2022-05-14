@@ -259,13 +259,14 @@ width: 100%;
 
 .services {
   margin: 0 150px;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
 
 .services__text {
   width: 370px;
+  margin-right: 25px;
 }
 
 .services__para {
@@ -274,6 +275,7 @@ width: 100%;
 
 .services__heading {
   font-size: 3rem;
+  width: 370px;
 }
 
 .button__arrow {
@@ -287,6 +289,28 @@ width: 100%;
 
 .services__button:hover .button__arrow {
   margin-left: 15px;
+}
+
+.services__services {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service {
+  margin-top: 25px;
+width: 250px;
+}
+
+.service__title {
+  margin: 12.5px 0;
+}
+
+.service__img {
+  height: 250px;
+  width: 250px;
+  background-color: #111;
 }
 
 /* UTILITY CLASSES */
