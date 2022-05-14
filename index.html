@@ -34,6 +34,8 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <!-- <link rel="stylesheet" href="styles/navbar.css"> -->
 
     <title>WeeWin Media</title>
@@ -78,7 +80,8 @@
             <img src="graphic.png" alt="" class="hero__graphic" />
             <div class="hero__text">
                 <h1 data-aos="fade-up" data-aos-delay="100" class="hero__heading">Lorem, Let's win it!</h1>
-                <p data-aos="fade-up" data-aos-delay="200" class="hero__tagline">We help you skyrocket your business growth by providing our 360 digital
+                <p data-aos="fade-up" data-aos-delay="200" class="hero__tagline">We help you skyrocket your business
+                    growth by providing our 360 digital
                     solutions.</p>
                 <button data-aos="fade-up" data-aos-delay="300" class="button button--hover button--round">
                     LET'S START
@@ -93,11 +96,13 @@
         <div class="services__text">
             <p class="tag">Our Services</h1>
             <h1 data-aos="fade-right" data-aos-delay="100" class="services__heading">What We Offer</h1>
-            <p data-aos="fade-right" data-aos-delay="200" class="services__para">We provide all round digital services carried out to the highest industry
+            <p data-aos="fade-right" data-aos-delay="200" class="services__para">We provide all round digital services
+                carried out to the highest industry
                 standards.</p>
-                <button data-aos="fade-right" data-aos-delay="300" class="services__button button">View All <i class="button__arrow fa-solid fa-arrow-right-long"></i></button>
+            <button data-aos="fade-right" data-aos-delay="300" class="services__button button">View All <i
+                    class="button__arrow fa-solid fa-arrow-right-long"></i></button>
         </div>
-        <div class="services__services">
+        <!-- <div class="services__services">
             <div class="service">
                 <div class="service__img">
                 </div>
@@ -122,14 +127,23 @@
                     <p class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, culpa.</p>
                 </div>
             </div>
-            <div class="service">
-                <div class="service__img">
-                </div>
-                <div class="service__content">
-                    <h1 class="service__title">Lorem, ipsum.</h1>
-                    <p class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, culpa.</p>
-                </div>
+        </div> -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://image.freepik.com/free-vector/man-working-laptop-illustration-work-from-home-cartoon-character-people-isolated_138676-1082.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="https://image.freepik.com/free-vector/man-working-laptop-illustration-work-from-home-cartoon-character-people-isolated_138676-1082.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="https://image.freepik.com/free-vector/man-working-laptop-illustration-work-from-home-cartoon-character-people-isolated_138676-1082.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="https://image.freepik.com/free-vector/man-working-laptop-illustration-work-from-home-cartoon-character-people-isolated_138676-1082.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="https://image.freepik.com/free-vector/man-working-laptop-illustration-work-from-home-cartoon-character-people-isolated_138676-1082.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="https://image.freepik.com/free-vector/man-working-laptop-illustration-work-from-home-cartoon-character-people-isolated_138676-1082.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="https://image.freepik.com/free-vector/man-working-laptop-illustration-work-from-home-cartoon-character-people-isolated_138676-1082.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="https://image.freepik.com/free-vector/man-working-laptop-illustration-work-from-home-cartoon-character-people-isolated_138676-1082.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="https://image.freepik.com/free-vector/man-working-laptop-illustration-work-from-home-cartoon-character-people-isolated_138676-1082.jpg" alt=""></div>
             </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -159,5 +173,20 @@
     </footer>
 </body>
 <script src="js/global.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
 
 </html>

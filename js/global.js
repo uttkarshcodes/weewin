@@ -1,9 +1,8 @@
 AOS.init();
 // let links = document.getElementById('menu__links')
-const menu = document.getElementById('menu');
-const button = document.getElementById('button');
+const menu = document.getElementById("menu");
+const button = document.getElementById("button");
 let menuOpen = false;
-
 
 // function disableScroll() {
 //     // Get the current page scroll position
@@ -20,20 +19,22 @@ let menuOpen = false;
 //     window.onscroll = function() {};
 // }
 
-button.addEventListener('click', () => {
-    if (!menuOpen) {
-        button.classList.add('open');
-        menuOpen = true;
-        menu.style.transform = 'translateY(0%)';
-        // links.style.transform = 'translateY(0%)';
-        // links.style.display = 'flex'
-        // disableScroll();
-    } else {
-        button.classList.remove('open');
-        menuOpen = false;
-        menu.style.transform = 'translateY(-100%)'
-        // links.style.transform = 'translateY(-100%)'
-        // enableScroll();
-        // links.style.display = 'none'
-    }
-})
+button.addEventListener("click", () => {
+  if (!menuOpen) {
+    button.classList.add("open");
+    menuOpen = true;
+    menu.style.transform = "translateY(0%)";
+    // links.style.transform = 'translateY(0%)';
+    // links.style.display = 'flex'
+    // disableScroll();
+  } else {
+    button.classList.remove("open");
+    menuOpen = false;
+    menu.style.transform = "translateY(-100%)";
+    // links.style.transform = 'translateY(-100%)'
+    // enableScroll();
+    // links.style.display = 'none'
+  }
+});
+
+
