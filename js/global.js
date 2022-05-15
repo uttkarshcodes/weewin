@@ -1,4 +1,9 @@
+// I N I T I A L I Z I N G   A O S   L I B R A R Y 
+
 AOS.init();
+
+// R E S P O N S I V E   N A V B A R   M E N U 
+
 // let links = document.getElementById('menu__links')
 const menu = document.getElementById("menu");
 const button = document.getElementById("button");
@@ -36,5 +41,3 @@ button.addEventListener("click", () => {
     // links.style.display = 'none'
   }
 });
-
-

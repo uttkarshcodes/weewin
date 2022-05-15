@@ -266,7 +266,7 @@ width: 100%;
 
 .services__text {
   width: 370px;
-  margin-right: 25px;
+  margin-right: 100px;
 }
 
 .services__para {
@@ -354,7 +354,7 @@ width: 100%;
 
 .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 60%;
   height: 100%;
   object-fit: cover;
 }
@@ -421,5 +421,40 @@ width: 100%;
   .menu__links {
     font-size: 4rem;
     margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .services {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .services {
+    margin: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .services__text {
+    width: 300px;
+  }
+  .services__heading {
+    font-size: 2rem;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .services {
+    margin: 25px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .hero__graphic {
+    height: 300px;
   }
 }

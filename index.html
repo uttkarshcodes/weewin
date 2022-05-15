@@ -161,7 +161,7 @@
                             <img src="images/influencer.png" alt="">
                         </div>
                         <div class="service__content">
-                            <h1 class="service__title">Facebook Ads</h1>
+                            <h1 class="service__title">Facebook</h1>
                             <p class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                                 culpa.</p>
                         </div>
@@ -173,7 +173,7 @@
                             <img src="images/setup.png" alt="">
                         </figure>
                         <div class="service__content">
-                            <h1 class="service__title">Lorem, ipsum.</h1>
+                            <h1 class="service__title">Lorem</h1>
                             <p class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                                 culpa.</p>
                         </div>
@@ -185,20 +185,7 @@
                             <img src="images/influencer.png" alt="">
                         </figure>
                         <div class="service__content">
-                            <h1 class="service__title">Lorem, ipsum.</h1>
-                            <p class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-                                culpa.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="service">
-                        <figure class="service__img">
-                            <img src="images/influencer.png" alt="">
-
-                        </figure>
-                        <div class="service__content">
-                            <h1 class="service__title">Lorem, ipsum.</h1>
+                            <h1 class="service__title">Lorem</h1>
                             <p class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                                 culpa.</p>
                         </div>
@@ -210,7 +197,7 @@
                             <img src="images/influencer.png" alt="">
                         </figure>
                         <div class="service__content">
-                            <h1 class="service__title">Lorem, ipsum.</h1>
+                            <h1 class="service__title">Lorem</h1>
                             <p class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                                 culpa.</p>
                         </div>
@@ -222,7 +209,7 @@
                             <img src="images/influencer.png" alt="">
                         </figure>
                         <div class="service__content">
-                            <h1 class="service__title">Lorem, ipsum.</h1>
+                            <h1 class="service__title">Lorem</h1>
                             <p class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                                 culpa.</p>
                         </div>
@@ -234,7 +221,7 @@
                             <img src="images/influencer.png" alt="">
                         </figure>
                         <div class="service__content">
-                            <h1 class="service__title">Lorem, ipsum.</h1>
+                            <h1 class="service__title">Lorem</h1>
                             <p class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
                                 culpa.</p>
                         </div>
@@ -243,7 +230,7 @@
             </div>
             <!-- <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div> -->
-            <div class="swiper-pagination"></div>
+            <div style="bottom: 0;" class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -275,7 +262,12 @@
 <script src="js/global.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
-    var swiper = new Swiper(".mySwiper", {
+    // S W I P E R  J S 
+
+    let winWidth = window.innerWidth;
+
+    if (winWidth>1400) {
+        var swiper = new Swiper(".mySwiper", {
         slidesPerView: 2,
         spaceBetween: 30,
         autoplay: {
@@ -287,6 +279,87 @@
             clickable: true,
         },
     });
+    } else if (winWidth>1195) {
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+    } else if (winWidth>885) {
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 150,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+    } else if (winWidth>670) {
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 50,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+    } else if (winWidth>570) {
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 150,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+    } else if (winWidth>480) {
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 250,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+    } else {
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 300,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });  
+    }
+
+    
 </script>
 
 </html>
