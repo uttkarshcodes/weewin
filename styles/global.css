@@ -21,7 +21,7 @@ html {
 } */
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
 
@@ -55,6 +55,7 @@ a {
 .navbar__logo {
   cursor: pointer;
   color: var(--tirtary-color);
+  height: 50px;
 }
 
 .navbar__links {
@@ -383,6 +384,9 @@ width: 100%;
   }
   #button {
     margin-left: auto;
+  }
+  .navbar__logo {
+    height: 30px;
   }
 }
 
