@@ -228,10 +228,10 @@ width: 100%;
 
 .hero__content {
   display: flex;
-  padding: 100px 100px;
-  padding-top: 0;
+  padding: 150px;
+  padding-top: 100px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .hero__text {
@@ -252,7 +252,7 @@ width: 100%;
 }
 
 .hero__graphic {
-  height: 600px;
+  height: 450px;
 }
 
 #button {
@@ -394,6 +394,10 @@ width: 100%;
   .navbar__logo {
     height: 30px;
   }
+  .hero__graphic {
+    height: 400px;
+    margin-top: 25px;
+  }
 }
 
 @media only screen and (max-width: 1160px) {
@@ -475,9 +479,21 @@ width: 100%;
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .hero__graphic {
+    height: 300px;
+  }
+}
+
 @media only screen and (max-width: 426px) {
   .services {
     margin: 25px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .services {
+    margin: 250px;
   }
 }
 
