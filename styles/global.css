@@ -231,7 +231,7 @@ width: 100%;
   padding: 150px;
   padding-top: 100px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .hero__text {
@@ -242,7 +242,7 @@ width: 100%;
   font-size: 3rem;
   font-weight: 800;
   color: var(--tirtary-color);
-  width: 600px;
+  width: 500px;
 }
 
 .hero__tagline {
@@ -252,7 +252,7 @@ width: 100%;
 }
 
 .hero__graphic {
-  height: 450px;
+  height: 400px;
 }
 
 #button {
