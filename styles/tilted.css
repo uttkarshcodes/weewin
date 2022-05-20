@@ -1,0 +1,21 @@
+.tilted {
+    background: #f2f2f2;
+    color: var(--secondary-color);
+    padding: 150px;
+    transform: skewY(-2.5deg);
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.tilted__content {
+    transform: skewY(2.5deg);
+}
+
+@media only screen and (max-width: 1000px) {
+    .services {
+      margin: 0 50px;
+    }
+    .tilted {
+      padding: 100px 50px;
+    }
+  }
