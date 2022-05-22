@@ -38,29 +38,29 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
-    <meta name="description" content="yet to write"/>
+    <meta name="description" content="yet to write" />
 
-    <meta property="og:locale" content="en_US"/>
+    <meta property="og:locale" content="en_US" />
 
-    <meta property="og:type" content="website"/>
+    <meta property="og:type" content="website" />
 
-    <meta property="og:title" content="WeeWin - yet to write"/>
+    <meta property="og:title" content="WeeWin - yet to write" />
 
-    <meta property="og:description" content="yet to write"/>
+    <meta property="og:description" content="yet to write" />
 
-    <meta property="og:site_name" content=""/>
+    <meta property="og:site_name" content="" />
 
-    <meta property="og:image" content="images/weewin.jpg"/>
+    <meta property="og:image" content="images/weewin.jpg" />
 
-    <meta property="og:image:width" content="900"/>
+    <meta property="og:image:width" content="900" />
 
-    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:height" content="600" />
 
-    <meta property="og:image:type" content="image/jpg"/>
+    <meta property="og:image:type" content="image/jpg" />
 
-    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:card" content="summary_large_image" />
 
-    <meta name="twitter:image" content="images/weewin.jpg "/>
+    <meta name="twitter:image" content="images/weewin.jpg " />
 
     <!-- <link rel="stylesheet" href="styles/navbar.css"> -->
 
@@ -120,7 +120,7 @@
     <!--  S E R V I C E S  -->
     <section id="services" class="services">
         <div class="services__text">
-            <p class="tag">Our Services</h1>
+            <p class="tag">Our Services</p>
             <h1 data-aos="fade-right" data-aos-delay="100" class="services__heading">What We Offer</h1>
             <p data-aos="fade-right" data-aos-delay="200" class="services__para">We provide all round digital services
                 carried out to the highest industry
@@ -237,10 +237,23 @@
     </section>
 
     <!--  A B O U T  -->
-    <section class="tilted">
-        <div class="tilted__content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi vitae qui ut, et saepe ex at mollitia voluptates molestias hic corrupti sequi, officiis temporibus praesentium fugiat alias quod, maiores architecto repellat harum. Veritatis, quod!
+    <section class="about">
+        <p class="tag">About</p>
+        <h1 class="about__heading">The Founder</h1>
+        <p style="width: 320px;">Viraj is a passion driven entrepreneur, speaker and a content creator.</p>
+        <div class="about__content">
+            <img class="about__image" src="images/v3.jpg" alt="">
+            <div class="about__text">
+               <a href="https://linkedin.com"><h1 class="about__name">Viraj Singh</h1></a>
+                <div class="about__about">
+                    <p>At the age of 15 he started his journey of content creation, after which there was no looking back.</p>
+                    <p>He developed experience and expertise in entrepreneurship, marketing strategies and social media psychology in building up everything he’s been able to build so far.</p>
+                    <p>At the age of 17 he dropped out of college and started WeeWin Media from scratch.</p>
+                </div>
+                <button class="services__button button">Read More<i class="button__arrow fa-solid fa-arrow-right-long"></i></button>
+            </div>
         </div>
+
     </section>
 
     <!--  F O O T E R  -->
@@ -279,100 +292,100 @@
 
     let winWidth = window.innerWidth;
 
-    if (winWidth>1400) {
+    if (winWidth > 1400) {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    } else if (winWidth>1195) {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    } else if (winWidth > 1195) {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    } else if (winWidth>885) {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    } else if (winWidth > 885) {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 150,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    } else if (winWidth>670) {
+            slidesPerView: 3,
+            spaceBetween: 150,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    } else if (winWidth > 670) {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 50,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    } else if (winWidth>570) {
+            slidesPerView: 2,
+            spaceBetween: 50,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    } else if (winWidth > 570) {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 150,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    } else if (winWidth>480) {
+            slidesPerView: 2,
+            spaceBetween: 150,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    } else if (winWidth > 480) {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 250,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+            slidesPerView: 2,
+            spaceBetween: 250,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     } else {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 300,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });  
+            slidesPerView: 2,
+            spaceBetween: 300,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     }
 
-    
+
 </script>
 
 </html>

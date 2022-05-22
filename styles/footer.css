@@ -1,9 +1,8 @@
 .footer {
-  background-color: #f2f2f2;
-  color: var(--secondary-color);
+  background-color: #181818;
+  color: var(--primary-color);
   width: 100%;
   padding: 100px;
-  margin-top: 150px;
 }
 
 .footer__links-container {

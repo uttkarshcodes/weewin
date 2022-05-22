@@ -12,9 +12,6 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .services {
-      margin: 0 50px;
-    }
     .tilted {
       padding: 100px 50px;
     }

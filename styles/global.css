@@ -337,6 +337,52 @@ a {
   object-fit: cover;
 }
 
+/* ABOUT */
+
+.about {
+  background-color: #f2f2f2;
+  padding: 150px;
+  margin-top: 150px;
+}
+
+.about__heading {
+  font-size: 3rem;
+}
+
+.about__image {
+  height: 500px;
+  border-radius: 2px;
+}
+
+.about__content {
+  margin-top: 50px;
+  display: flex;
+}
+
+.about__text {
+  width: 450px;
+  margin-left: 50px;
+  margin-top: 50px;
+  line-height: 25px;
+}
+
+.about__about {
+  margin-top: 20px;
+}
+
+.about__about p {
+  margin: 25px 0;
+}
+
+.about__name {
+  color: var(--tirtary-color);
+  font-size: 2.25rem;
+}
+
+.about__name:hover {
+  text-decoration: underline;
+}
+
 /* MEDIA QUERRIES */
 
 /* NAVBAR */
@@ -400,9 +446,13 @@ a {
   }
   .hero__content {
     padding: 25px;
+    padding-bottom: 100px;
   }
   .navbar {
     padding: 30px;
+  }
+  .about__heading {
+    font-size: 2rem;
   }
 }
 
@@ -437,6 +487,9 @@ a {
     font-size: 2rem;
     width: 300px;
   }
+  .about__name {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -460,5 +513,73 @@ a {
 @media only screen and (max-width: 360px) {
   .hero__graphic {
     height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1125px) {
+  .about__image {
+    height: 400px;
+  }
+  .about__text {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about {
+    padding: 50px;
+  }
+  .about__content {
+    flex-direction: column;
+  }
+  .about__text {
+    margin: 0;
+    margin-top: 50px;
+    width: 400px;
+  }
+  .about__image {
+    height: 500px;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .about__text {
+    width: 350px;
+  }
+  .about__image {
+    height: 400px;
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .about {
+    padding: 25px;
+  }
+  .services {
+    margin: 0 25px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .hero__graphic {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .about__text {
+    width: 290px;
+  }
+  .about__image {
+    height: 350px;
+    width: 290px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .hero__graphic {
+    height: 200px;
   }
 }
