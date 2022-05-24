@@ -59,3 +59,9 @@
     padding: 50px;
   }
 }
+
+@media only screen and (max-width: 440px) {
+  .footer {
+    padding: 25px;
+  }
+}

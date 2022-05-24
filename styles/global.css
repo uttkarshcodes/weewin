@@ -367,7 +367,8 @@ a {
 }
 
 .about__about {
-  margin-top: 20px;
+  margin: 10px 0;
+  font-size: 1.1rem;
 }
 
 .about__about p {
@@ -583,3 +584,4 @@ a {
     height: 200px;
   }
 }
+
