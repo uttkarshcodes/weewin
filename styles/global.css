@@ -360,6 +360,7 @@ a {
 }
 
 .about__text {
+  color: rgb(100, 100, 100);
   width: 450px;
   margin-left: 50px;
   margin-top: 50px;
