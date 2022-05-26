@@ -1,0 +1,38 @@
+.contacthero {
+    padding: 50px 150px;
+}
+
+.contacthero__heading {
+    font-size: 3rem;
+}
+
+.contacthero__tagline {
+    color: rgb(100, 100, 100);
+}
+
+.contact__one {
+    padding: 100px 150px;
+    background-color: #181818;
+    color: var(--primary-color);
+}
+
+.contact__tagline {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.contact__details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+}
+
+.contact__two {
+    min-height: 300px;
+    background-color: #f2f2f2;
+}
