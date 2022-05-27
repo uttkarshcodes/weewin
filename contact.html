@@ -38,29 +38,29 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
-    <meta name="description" content="yet to write"/>
+    <meta name="description" content="yet to write" />
 
-    <meta property="og:locale" content="en_US"/>
+    <meta property="og:locale" content="en_US" />
 
-    <meta property="og:type" content="website"/>
+    <meta property="og:type" content="website" />
 
-    <meta property="og:title" content="WeeWin - yet to write"/>
+    <meta property="og:title" content="WeeWin - yet to write" />
 
-    <meta property="og:description" content="yet to write"/>
+    <meta property="og:description" content="yet to write" />
 
-    <meta property="og:site_name" content=""/>
+    <meta property="og:site_name" content="" />
 
-    <meta property="og:image" content="images/weewin.jpg"/>
+    <meta property="og:image" content="images/weewin.jpg" />
 
-    <meta property="og:image:width" content="900"/>
+    <meta property="og:image:width" content="900" />
 
-    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:height" content="600" />
 
-    <meta property="og:image:type" content="image/jpg"/>
+    <meta property="og:image:type" content="image/jpg" />
 
-    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:card" content="summary_large_image" />
 
-    <meta name="twitter:image" content="images/weewin.jpg "/>
+    <meta name="twitter:image" content="images/weewin.jpg " />
 
     <!-- <link rel="stylesheet" href="styles/navbar.css"> -->
 
@@ -106,7 +106,7 @@
             <h1 class="contacthero__heading">
                 Contact Us
             </h1>
-            <p class="contacthero__tagline" >Say hi, we won't bite.</p>
+            <p class="contacthero__tagline">Say hi, we won't bite.</p>
             <button style="margin: 20px 0;" class="button button--hover button--round">
                 Get me going!
             </button>
@@ -118,16 +118,30 @@
         <div class="contact__one">
             <h1 class="contact__tagline">Say hi, we won't bite.</h1>
             <div class="contact__details">
+                <a href="" class="link">
                     <p style="margin-bottom: 5px;">+91 34793 42355</p>
+                </a>
+                <a href="" class="link">
                     <p>aisa@waisa.com</p>
+                </a>
             </div>
         </div>
         <div class="contact__two">
+            <h1 class="contact__tagline">Let's make it happen!</h1>
             <form action="" class="contact__form">
-                
+                <input type="text" id="name" class="contact__input" placeholder="Name" required>
+                <input type="email" id="email" class="contact__input" placeholder="Email" required>
+                <input type="tel" id="phone" class="contact__input" placeholder="Phone" required>
+                <input type="text" id="company" class="contact__input" placeholder="Company">
+                <input type="text" id="message" class="contact__input" placeholder="Message" required>
+                <button type="submit" style="margin: 20px 0; margin-left: auto;" class="button button--hover button--round button--contact">
+                    Let's Go!
+                </button>
             </form>
         </div>
-        <div class="contact__two"></div>
+        <div class="contact__three">
+            MailChimp Form Here
+        </div>
     </section>
 
     <!--  F O O T E R  -->
@@ -166,100 +180,100 @@
 
     let winWidth = window.innerWidth;
 
-    if (winWidth>1400) {
+    if (winWidth > 1400) {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    } else if (winWidth>1195) {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    } else if (winWidth > 1195) {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    } else if (winWidth>885) {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    } else if (winWidth > 885) {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 150,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    } else if (winWidth>670) {
+            slidesPerView: 3,
+            spaceBetween: 150,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    } else if (winWidth > 670) {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 50,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    } else if (winWidth>570) {
+            slidesPerView: 2,
+            spaceBetween: 50,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    } else if (winWidth > 570) {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 150,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    } else if (winWidth>480) {
+            slidesPerView: 2,
+            spaceBetween: 150,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    } else if (winWidth > 480) {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 250,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+            slidesPerView: 2,
+            spaceBetween: 250,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     } else {
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 300,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });  
+            slidesPerView: 2,
+            spaceBetween: 300,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     }
 
-    
+
 </script>
 
 </html>

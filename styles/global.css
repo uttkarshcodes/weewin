@@ -15,10 +15,10 @@ html {
   --fortary-color: #878787;
 }
 
-/* ::selection {
-  
-  
-} */
+::selection {
+  background-color: var(--tirtary-color);
+  color: var(--primary-color);
+}
 
 body {
   overflow-x: hidden;
@@ -321,6 +321,10 @@ a {
 
 .tag {
   color: var(--tirtary-color);
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 /* SWIPER */

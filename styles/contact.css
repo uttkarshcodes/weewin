@@ -1,38 +1,135 @@
 .contacthero {
-    padding: 50px 150px;
+  padding: 50px 150px;
+  padding-bottom: 100px;
 }
 
 .contacthero__heading {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .contacthero__tagline {
-    color: rgb(100, 100, 100);
+  color: rgb(100, 100, 100);
 }
 
 .contact__one {
-    padding: 100px 150px;
-    background-color: #181818;
-    color: var(--primary-color);
+  padding: 100px 150px;
+  background-color: #e8e8e8;
 }
 
 .contact__tagline {
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .contact__details {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
 }
 
 .contact__two {
-    min-height: 300px;
-    background-color: #f2f2f2;
+  color: var(--secondary-color);
+  padding: 100px 150px;
+  background-color: #bababa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.contact__input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 12.5px 25px;
+  margin-bottom: 50px;
+  font-size: medium;
+  font-family: "Poppins", sans-serif;
+  width: 600px;
+  letter-spacing: 1px;
+}
+
+.contact__three {
+  padding: 100px 150px;
+  background-color: #8c8c8c;
+  color: var(--primary-color);
+}
+
+.button--contact {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+  width: 200px;
+}
+
+.button--contact:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+/* ::placeholder {
+    color: rgb(94, 94, 94);
+} */
+
+@media only screen and (max-width: 1000px) {
+  .contact__one,
+  .contact__two,
+  .contact__three {
+      padding: 100px 50px;
+  }
+  .contacthero {
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  .contact__form {
+      width: 100%;
+  }
+  .contact__input {
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact__one,
+  .contact__two,
+  .contact__three {
+      padding: 100px 25px;
+  }
+  .contacthero {
+      padding-left: 25px;
+      padding-right: 25px;
+  }
+  .contact__form {
+      width: 100%;
+  }
+  .contact__input {
+      width: 100%;
+  }
+  .button--contact {
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contacthero__heading {
+      font-size: 2rem;
+  }
+  .contact__tagline {
+      font-size: 1.5rem;
+  }
+  .contact__form {
+      margin-top: 0px;
+  }
 }
