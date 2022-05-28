@@ -524,7 +524,7 @@ a {
 
 @media only screen and (max-width: 1125px) {
   .about__image {
-    height: 400px;
+    height: auto;
   }
   .about__text {
     margin-top: 0;
@@ -544,18 +544,18 @@ a {
     width: 400px;
   }
   .about__image {
-    height: 500px;
+    height: auto;
     width: 400px;
   }
 }
 
 @media only screen and (max-width: 475px) {
   .about__text {
-    width: 350px;
+    width: 100%;
   }
   .about__image {
-    height: 400px;
-    width: 350px;
+    height: auto;
+    width: 100%;
   }
 }
 
@@ -571,16 +571,6 @@ a {
 @media only screen and (max-width: 425px) {
   .hero__graphic {
     height: 250px;
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  .about__text {
-    width: 290px;
-  }
-  .about__image {
-    height: 350px;
-    width: 290px;
   }
 }
 

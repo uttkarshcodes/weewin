@@ -35,7 +35,7 @@
 .contact__two {
   color: var(--secondary-color);
   padding: 100px 150px;
-  background-color: #bababa;
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,8 +64,8 @@
 
 .contact__three {
   padding: 100px 150px;
-  background-color: #8c8c8c;
-  color: var(--primary-color);
+  background-color: #e8e8e8;
+  color: var(--secondary-color);
 }
 
 .button--contact {
