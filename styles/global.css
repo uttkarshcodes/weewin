@@ -206,7 +206,7 @@ a {
 .hero__content {
   display: flex;
   padding: 150px;
-  padding-top: 100px;
+  padding-bottom: 200px;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -229,7 +229,7 @@ a {
 }
 
 .hero__graphic {
-  height: 400px;
+  height: 450px;
 }
 
 #button {
@@ -346,7 +346,7 @@ a {
 .about {
   background-color: #f2f2f2;
   padding: 150px;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 .about__heading {
@@ -457,6 +457,9 @@ a {
   .navbar {
     padding: 30px;
   }
+  .about {
+    margin-top: 100px;
+  }
   .about__heading {
     font-size: 2rem;
   }
@@ -524,7 +527,7 @@ a {
 
 @media only screen and (max-width: 1125px) {
   .about__image {
-    height: auto;
+    height: 500px;
   }
   .about__text {
     margin-top: 0;
@@ -579,4 +582,3 @@ a {
     height: 200px;
   }
 }
-
