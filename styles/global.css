@@ -293,12 +293,10 @@ a {
 
 .services {
   margin: 200px 150px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .services__text {
-  width: 370px;
+  width: 400px;
   margin-right: 100px;
 }
 
