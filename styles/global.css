@@ -878,13 +878,13 @@ a {
 @media only screen and (max-width: 420px) {
   .hero__graphic {
     height: 250px;
-}
+  }
 }
 
 @media only screen and (max-width: 360px) {
   .git__heading {
     font-size: 2rem;
-}
+  }
 }
 
 @media only screen and (max-width: 1125px) {

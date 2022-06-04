@@ -125,10 +125,10 @@
     <section id="contact" class="contact">
         <div class="contact__two">
             <h1 class="contact__tagline">Let's make it happen!</h1>
-            <form action="" class="contact__form">
-                <input type="text" id="name" class="contact__input" placeholder="Name" required>
-                <input type="email" id="email" class="contact__input" placeholder="Email" required>
-                <select type="text" id="jobrole" class="" placeholder="Job Role" required> 
+            <form  action="https://formsubmit.co/contact@weewinmedia.com" method="POST" class="contact__form">
+                <input name="name" type="text" id="name" class="contact__input" placeholder="Name" required>
+                <input name="email" type="email" id="email" class="contact__input" placeholder="Email" required>
+                <select name="jobrole" type="text" id="jobrole" class="" placeholder="Job Role" required> 
                     <option value="Founder">Job Role</option>
                     <option value="Founder">Founder</option>
                     <option value="CEO">CEO</option>
@@ -136,8 +136,8 @@
                     <option value="COO">COO</option>
                     <option value="Freelancer">Freelancer</option>
                 </select>
-                <input type="url" id="url" class="contact__input" placeholder="Website / Social Media" required>
-                <select type="text" id="biztype" class="" required> 
+                <input name="url" type="url" id="url" class="contact__input" placeholder="Website / Social Media" required>
+                <select name="biztype" type="text" id="biztype" class="" required> 
                     <option value="Startup">Business Type</option>
                     <option value="Startup">Startup</option>
                     <option value="Founder">eCommerce</option>
@@ -145,8 +145,8 @@
                     <option value="CMO">Local Business</option>
                     <option value="COO">Other</option>
                 </select>
-                <input type="tel" id="phone" class="contact__input" placeholder="Phone" required>
-                <input type="text" id="message" class="contact__input" placeholder="How Can We Help?" required>
+                <input name="phone" type="tel" id="phone" class="contact__input" placeholder="Phone" required>
+                <input name="message" type="text" id="message" class="contact__input" placeholder="How Can We Help?" required>
                 <button type="submit" style="margin: 20px 0; margin-left: auto;" class="button button--hover button--round button--contact">
                     Let's Go!
                 </button>
