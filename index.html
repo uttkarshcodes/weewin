@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="styles/tilted.css" />
 
+    <link rel="stylesheet" href="styles/contact.css" />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -78,17 +80,18 @@
                 <!-- <a href="" class="navbar__link">Home</a>
                 <a href="" class="navbar__link">Services</a> -->
                 <a href="index.html" class="navbar__link">Home</a>
-                <a href="contact.html" class="navbar__link">Contact</a>
+                <a id="rmv" href="contact.html" class="navbar__link">Contact</a>
             </ul>
             <div id="button">
                 <div id="bars"></div>
             </div>
-            <section id="menu">
+            <section class="menu" id="menu">
                 <ul class="menu__links">
-                    <a style="margin-top: 0; font-size: 5rem;" href="" class="menu__link">Work</a>
-                    <a style="font-size: 5rem;" href="index.html/#services" class="menu__link">Services</a>
+                    <!-- <a style="margin-top: 0; font-size: 5rem;" href="index.html" class="menu__link">Home</a> -->
+                    <a style="font-size: 5rem;" href="services.html" class="menu__link">Services</a>
                     <a style="font-size: 5rem;" href="contact.html" class="menu__link">Contact</a>
                     <a style="margin-bottom: 0; font-size: 5rem;" href="about.html" class="menu__link">About</a>
+                    <a style="margin-bottom: 0; font-size: 5rem;" href="about.html" class="menu__link">Sources</a>
                 </ul>
                 <div class="menu__socials">
                     <a href="www.instagram.com/weewinmedia">
@@ -113,10 +116,9 @@
         <div class="hero__content">
             <img src="images/hero.png" alt="" class="hero__graphic" />
             <div class="hero__text">
-                <h1 data-aos="fade-up" data-aos-delay="100" class="hero__heading">Helping Brands Win their Social Media
-                    Game</h1>
+                <h1 data-aos="fade-up" data-aos-delay="100" class="hero__heading">We help brands grow and scale by unlocking the powers of Social Media </h1>
                 <p data-aos="fade-up" data-aos-delay="200" class="hero__tagline">Psychology driven campaigns and
-                    Marketing that scales traffic, boosts conversions, increases customer aquasition while keeping the
+                    Marketing that scales traffic, boosts conversions, increases customer aquisition while keeping the
                     cost in check.</p>
                 <a href="#services"> <button data-aos="fade-up" data-aos-delay="300"
                         class="button button--hover button--round">
@@ -234,6 +236,20 @@
             </div>
         </div>
     </section>
+
+    <!-- <section class="freebie">
+        <img class="freebie__img" src="images/nwsletter.png" alt="">
+        <div class="freebie__text">
+            <h1 class="freebie__heading">Grab Our <span class="highlight">Marketing Ebook</span>  For Free!</h1>
+            <form class="freebie__form" action="https://formsubmit.co/contact@weewinmedia.com" method="POST" class="contact__form">
+                <input style="margin-bottom: 0; width: 70%;" name="EMAIL" type="email" id="email" class="contact__input" placeholder="Email" required>
+                <input class="freebie__input" type="hidden" name="MESSAGE" value="I want your Free Marketing Ebook!">
+                <button type="submit" style="margin: 20px 0; margin-left: auto; margin-bottom: 0;" class="button button--hover button--round button--contact">
+                    Let's Go!
+                </button>
+            </form>
+        </div>
+    </section> -->
 
     <section class="git">
         <h1  data-aos="fade-up" data-aos-delay="100" class="git__heading">Get In Touch!</h1>

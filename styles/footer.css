@@ -37,6 +37,7 @@
 
 .footer__social {
   margin: 0 10px;
+  font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 1100px) {
