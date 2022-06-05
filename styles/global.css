@@ -203,7 +203,7 @@ a {
 
 .menu__icon:hover {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--tirtary-color);
 }
 
 /* HERO */
@@ -552,6 +552,15 @@ a {
 
 .about__name:hover {
   text-decoration: underline;
+}
+
+/* GIT */
+
+.contact__button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  box-shadow: 0px 2px 5px rgba(255, 101, 47, 0.2);
 }
 
 /* MEDIA QUERRIES */

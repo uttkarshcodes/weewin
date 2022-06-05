@@ -218,7 +218,7 @@
         <div class="footer__links-container">
             <ul class="footer__links">
                 <h3 class="footer__heading">Contact</h3>
-                <a class="footer__link" href="tel:+919286945592">+91 92869 45592</a>
+                <a class="footer__link" href="mailto:viraj@weewinmedia.com">viraj@weewinmedia.com</a>
                 <a class="footer__link" href="mailto:contact@weewinmedia.com">contact@weewinmedia.com</a>
             </ul>
             <ul class="footer__links footer__links--margin">
@@ -238,111 +238,14 @@
         </div>
     </footer>
 
+    <a href="contact.html"> <button style="background-color: var(--tirtary-color); color: var(--primary-color);" class="contact__button button button--hover button--round">
+        GET IN TOUCH<i style="margin-left: 10px;" class="fa-solid fa-paper-plane"></i>
+    </button></a>
+
 </body>
 
 <script src="js/global.js"></script>
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-<script>
-    // S W I P E R  J S 
-
-    let winWidth = window.innerWidth;
-
-    if (winWidth > 1400) {
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    } else if (winWidth > 1195) {
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    } else if (winWidth > 885) {
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 150,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    } else if (winWidth > 670) {
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 50,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    } else if (winWidth > 570) {
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 150,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    } else if (winWidth > 480) {
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 250,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    } else {
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 300,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    }
-
-
-</script>
 
 </html>
