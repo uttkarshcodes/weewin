@@ -88,10 +88,10 @@
             <section class="menu" id="menu">
                 <ul class="menu__links">
                     <!-- <a style="margin-top: 0; font-size: 5rem;" href="index.html" class="menu__link">Home</a> -->
-                    <a style="font-size: 5rem;" href="services.html" class="menu__link">Services</a>
-                    <a style="font-size: 5rem;" href="contact.html" class="menu__link">Contact</a>
-                    <a style="margin-bottom: 0; font-size: 5rem;" href="about.html" class="menu__link">About</a>
-                    <a style="margin-bottom: 0; font-size: 5rem;" href="about.html" class="menu__link">Sources</a>
+                    <a id="link1" style="font-size: 5rem;" href="services.html" class="menu__link">Services</a>
+                    <a id="link2" style="font-size: 5rem;" href="contact.html" class="menu__link">Contact</a>
+                    <a id="link3" style="margin-bottom: 0; font-size: 5rem;" href="about.html" class="menu__link">About</a>
+                    <a id="link4" style="margin-bottom: 0; font-size: 5rem;" href="resources.html" class="menu__link">Reources</a>
                 </ul>
                 <div class="menu__socials">
                     <a href="www.instagram.com/weewinmedia">
@@ -219,20 +219,17 @@
             <div data-aos="fade-right" data-aos-delay="100" class="business__card">
                 <img class="business__img" src="images/rocket.png" alt="">
                 <h2 class="business__title">Startups</h2>
-                <p class="business_desc">We will create an end-to-end marketing strategy that promotes your brand,
-                    scales your traffic and gets you relevant leads.</p>
+                <p class="business_desc">We will create an end-to-end marketing strategy that promotes your brand, scales your traffic and gets you relevant leads.</p>
             </div>
             <div data-aos="fade-right" data-aos-delay="200" class="business__card">
                 <img class="business__img" src="images/shopping-cart.png" alt="">
                 <h2 class="business__title">eCommerce</h2>
-                <p class="business_desc">We will implement an end-to-end marketing strategy that scales your traffic,
-                    boosts sales conversion and increases your customer lifetime value.</p>
+                <p class="business_desc">We will implement an end-to-end marketing strategy that scales your traffic, boosts sales conversion and increases your customer lifetime value.</p>
             </div>
             <div style="margin-bottom: 0;" data-aos="fade-right" data-aos-delay="300" class="business__card">
                 <img class="business__img" src="images/brand-image.png" alt="">
                 <h2 class="business__title">Personal Brands</h2>
-                <p class="business_desc">We will implement an end-to-end marketing strategy that will increase your
-                    brand reputation, engagement, and important metrics.</p>
+                <p class="business_desc">We will implement an end-to-end marketing strategy that will increase your brand reputation, engagement, and important metrics.</p>
             </div>
         </div>
     </section>
@@ -289,7 +286,7 @@
     </footer>
 
     <a href="contact.html"> <button style="background-color: var(--tirtary-color); color: var(--primary-color);" class="contact__button button button--hover button--round">
-        GET IN TOUCH<i style="margin-left: 10px;" class="fa-solid fa-paper-plane"></i>
+        GET IN TOUCH
     </button></a>
 
 </body>
@@ -300,6 +297,24 @@
 
 <script>
     console.log(window.innerWidth, 'x', window.innerHeight)
+    let width = window.innerWidth;
+    let link1 = document.getElementById('link1')
+    let link2 = document.getElementById('link2')
+    let link3 = document.getElementById('link3')
+    let link4 = document.getElementById('link4')
+    console.log(width)
+    if (width<500) {
+        link1.style.fontSize = '4rem'
+        link2.style.fontSize = '4rem'
+        link4.style.fontSize = '4rem'
+        link3.style.fontSize = '4rem'
+    }
+    if (width<430) {
+        link1.style.fontSize = '3rem'
+        link2.style.fontSize = '3rem'
+        link4.style.fontSize = '3rem'
+        link3.style.fontSize = '3rem'
+    }
 </script>
 
 </html>

@@ -612,15 +612,18 @@ a {
   }  
   #button {
     margin-right: 0;
-    margin-left: auto;
+    margin-left: 25px;
   }
   .navbar__logo {
-    height: 30px;
+    height: 40px;
   }
   .hero__graphic {
     height: 400px;
     margin-top: 25px;
   }
+  .navbar__links {
+    margin-right: 0px;
+}
 }
 
 @media only screen and (max-width: 1160px) {
