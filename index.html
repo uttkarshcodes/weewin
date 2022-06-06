@@ -87,7 +87,7 @@
             </div>
             <section class="menu" id="menu">
                 <ul class="menu__links">
-                    <!-- <a style="margin-top: 0; font-size: 5rem;" href="index.html" class="menu__link">Home</a> -->
+                    <a id="link5" style="margin-top: 0; font-size: 5rem;" href="index.html" class="menu__link">Home</a>
                     <a id="link1" style="font-size: 5rem;" href="services.html" class="menu__link">Services</a>
                     <a id="link2" style="font-size: 5rem;" href="contact.html" class="menu__link">Contact</a>
                     <a id="link3" style="margin-bottom: 0; font-size: 5rem;" href="about.html" class="menu__link">About</a>
@@ -167,22 +167,22 @@
                 carried out to the highest industry
                 standards.</p>
         </div>
-        <!-- <div class="services__overviews">
-            <div class="services__overview">
+        <div class="services__overviews">
+            <div style="margin-right: 25px;" class="services__overview">
                 <img class="overview__img" src="images/Startup.png" alt="">
                 <div class="overview__text">
-                    <h2 class="overview__heading">From Launch To Growth</h2>
+                    <h3 class="overview__heading">From Launch To Growth</h3>
                     <p class="overview__desc">If you’re just launching, we will start by developing a detailed market strategy. Once it’s done, we’ll set up a team of our in-house and external specialists – and simply get the party started.</p>
                 </div>
             </div>
             <div class="services__overview">
                 <img class="overview__img" src="images/Stagnant.png" alt="">
                 <div class="overview__text">
-                    <h2 class="overview__heading">From Stagnation To Growth</h2>
+                    <h3 class="overview__heading">From Stagnation To Growth</h3>
                     <p class="overview__desc">If you’re already on the market, but you’re not happy with your growth rate, we will start by reviewing your current sales and marketing strategy – and suggesting re-adjustments. If you don’t have a team to execute the changes – let us do it for you.</p>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="services__cards">
             <div class="services__card">
                 <img class="services__img" src="images/social-media.png" alt="">
@@ -302,18 +302,21 @@
     let link2 = document.getElementById('link2')
     let link3 = document.getElementById('link3')
     let link4 = document.getElementById('link4')
+    let link5 = document.getElementById('link5')
     console.log(width)
     if (width<500) {
         link1.style.fontSize = '4rem'
         link2.style.fontSize = '4rem'
         link4.style.fontSize = '4rem'
         link3.style.fontSize = '4rem'
+        link5.style.fontSize = '4rem'
     }
     if (width<430) {
         link1.style.fontSize = '3rem'
         link2.style.fontSize = '3rem'
         link4.style.fontSize = '3rem'
         link3.style.fontSize = '3rem'
+        link5.style.fontSize = '3rem'
     }
 </script>
 

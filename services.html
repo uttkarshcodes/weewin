@@ -87,6 +87,7 @@
             </div>
             <section id="menu">
                 <ul class="menu__links">
+                    <a id="link5" style="margin-top: 0; font-size: 5rem;" href="index.html" class="menu__link">Home</a>
                     <a id="link1" style="font-size: 5rem;" href="services.html" class="menu__link">Services</a>
                     <a id="link2" style="font-size: 5rem;" href="contact.html" class="menu__link">Contact</a>
                     <a id="link3" style="margin-bottom: 0; font-size: 5rem;" href="about.html" class="menu__link">About</a>
@@ -217,25 +218,26 @@
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 <script>
-    console.log(window.innerWidth, 'x', window.innerHeight)
-    console.log(window.innerWidth, 'x', window.innerHeight)
     let width = window.innerWidth;
     let link1 = document.getElementById('link1')
     let link2 = document.getElementById('link2')
     let link3 = document.getElementById('link3')
     let link4 = document.getElementById('link4')
+    let link5 = document.getElementById('link5')
     console.log(width)
     if (width<500) {
         link1.style.fontSize = '4rem'
         link2.style.fontSize = '4rem'
         link4.style.fontSize = '4rem'
         link3.style.fontSize = '4rem'
+        link5.style.fontSize = '4rem'
     }
     if (width<430) {
         link1.style.fontSize = '3rem'
         link2.style.fontSize = '3rem'
         link4.style.fontSize = '3rem'
         link3.style.fontSize = '3rem'
+        link5.style.fontSize = '3rem'
     }
 </script>
 
