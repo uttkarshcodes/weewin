@@ -299,12 +299,13 @@ a {
 }
 
 .services__text {
-  width: 400px;
+  width: 600px;
   margin: 0 150px;
 }
 
 .services__para {
   font-weight: 400;
+  margin: 25px 0;
 }
 
 .services__heading {
@@ -728,7 +729,7 @@ a {
 
 @media only screen and (max-width: 600px) {
   .services__text {
-    width: 300px;
+    width: 90%;
   }
   .services__heading {
     font-size: 2rem;
