@@ -39,6 +39,10 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Arsenal&family=Montserrat&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+
     <meta name="description" content="We’re a 360* service digital agency
     that partners with companies and brands, helping them to leverage the
     digital possibilities to create conversions, ROI driven results, build
@@ -77,13 +81,14 @@
 <body>
     <!--  H E R O  -->
     <section class="hero">
-        <navbar class="navbar">
+        <navbar style="background: transparent;" class="navbar">
             <a href="index.html"><img src="images/weewinlogo.png" alt="weewin logo" class="navbar__logo" /></a>
             <ul class="navbar__links">
                 <!-- <a href="" class="navbar__link">Home</a>
                 <a href="" class="navbar__link">Services</a> -->
-                <a href="index.html" class="navbar__link">Home</a>
+                <a id="home" href="index.html" class="navbar__link">Home</a>
                 <a id="rmv" href="contact.html" class="navbar__link">Contact</a>
+                <a id="rmv" href="services.html" class="navbar__link">Services</a>
             </ul>
             <div id="button">
                 <div id="bars"></div>
@@ -96,7 +101,7 @@
                     <a id="link3" style="margin-bottom: 0; font-size: 5rem" href="about.html"
                         class="menu__link">About</a>
                     <a id="link4" style="margin-bottom: 0; font-size: 5rem" href="resources.html"
-                        class="menu__link">Reources</a>
+                        class="menu__link">Resources</a>
                 </ul>
                 <div class="menu__socials">
                     <a href="https://instagram.com/weewinmedia">
@@ -121,23 +126,12 @@
             </section>
         </navbar>
         <div class="hero__content">
-            <img src="images/hero.png" alt="weewin hero illustration" class="hero__graphic" />
-            <div class="hero__text">
-                <h1 data-aos="fade-up" data-aos-delay="100" class="hero__heading">
-                    We help brands scale by unlocking the power of Social Media
-                </h1>
-                <p data-aos="fade-up" data-aos-delay="200" class="hero__tagline">
-                    Psychology driven campaigns and Marketing that scales traffic,
-                    boosts conversions, increases customer aquisition while keeping the
-                    cost in check.
-                </p>
-                <a href="#services">
-                    <button data-aos="fade-up" data-aos-delay="300" class="button button--hover button--round">
-                        OUR SERVICES
-                    </button></a>
+            <div class="hero__box">
+                <h1 class="hero__heading">We help brands grow and scale by unlocking the powers of Social Media!</h1>
+                <!-- <h3>By working end to end along wisth Psychology Driven campaigns and Marketing strategies that scales your traffic, boosts conversion, increases customer acquisition while keeping your customer acquisition cost in check.</h3> -->
             </div>
         </div>
-        <div class="circle"></div>
+        <!-- <div class="circle"></div> -->
     </section>
 
     <section class="ourstory">
@@ -172,128 +166,125 @@
         </div>
     </section>
 
-        <!--  S E R V I C E S  -->
-        <section id="services" class="servicespage">
+    <!--  S E R V I C E S  -->
+    <section id="services" class="servicespage skew">
+        <div class="unskew">
             <div class="services__text">
-              <p class="tag">WeeWin Is Best!</p>
-              <h1 data-aos="fade-right" data-aos-delay="100" class="services__heading">
-                Why WeeWin?
-              </h1>
+                <p class="tag">WeeWin Is Best!</p>
+                <h1 style="color: var(--tirtary-color)" class="services__heading">
+                    Why WeeWin?
+                </h1>
             </div>
             <div class="services__cards">
-              <div class="services__card">
-                <img class="services__img" src="images/deal.png" alt="weewin parnership illustration" />
-                <h3 class="services__title">A partner, not an agency</h3>
-                <p class="services__desc">
-                    We’re in this together: Stay focused on delivering a great product,while our team takes care of your entire digital marketing - from strategy to implementation
-                </p>
-              </div>
-              <div class="services__card">
-                <img class="services__img" src="images/salary.png" alt="weewin growth illustration" />
-                <h3 class="services__title">Clients, not clicks</h3>
-                <p class="services__desc">
-                    We aim to deliver clients (revenue), not just clicks, reach or impressions. We constantly monitor the metrics and swiftly redjust our moves to deliver better results.
-                </p>
-              </div>
-              <div class="services__card">
-                <img class="services__img" src="images/funnel.png" alt="weewin funnel illustration" />
-                <h3 class="services__title">A funnel, not a website</h3>
-                <p class="services__desc">
-                    
-                    We work holisitcally with what you have - from your branding, to your product, marketing and sales - and transform it into one cohesive, digital journey.
-                </p>
-              </div>
-              <div class="services__card">
-                <img class="services__img" src="images/rating.png" alt="weewin experts illustration" />
-                <h3 class="services__title">Specialists, not account managers</h3>
-                <p class="services__desc">
-                    our team of full stack marketers is trained in 350+ skills in 12 categories - and these numbers keep on increasing thanks to our hustlers mentality and weekly skill acceleration workshops.
-                </p>
-              </div>
-              <div class="services__card">
-                <img class="services__img" src="images/sales.png" alt="weewin sales illustration" />
-                <h3 class="services__title">Education, not pushy sales tactics</h3>
-                <p class="services__desc">
-                    
-                    Acquiring clients online is getting harder every day - unless you build a relationship with your audience by creating value through engaging, relevant content and partner with WeeWin Media. ;)
-                </p>
-              </div>
-              <div class="services__card">
-                <img class="services__img" src="images/analytics.png" alt="weewin data illustration" />
-                <h3 class="services__title">Data, not wild guesses</h3>
-                <p class="services__desc">
-                    Get ready to see your business metrics turned into actionable insights, so you can grow your traffic, boost conversions, and decrease your customer acquisition cost.
-                </p>
-              </div>
+
+                <div class="services__card">
+                    <img class="services__img" src="images/deal.png" alt="weewin parnership illustration" />
+                    <h3 class="services__title">A partner, not an agency</h3>
+                    <p class="services__desc">
+                        We’re in this together: Stay focused on delivering a great product,while our team takes care
+                        of your entire digital marketing - from strategy to implementation
+                    </p>
+                </div>
+                <div class="services__card">
+                    <img class="services__img" src="images/salary.png" alt="weewin growth illustration" />
+                    <h3 class="services__title">Clients, not clicks</h3>
+                    <p class="services__desc">
+                        We aim to deliver client, not just clicks, reach or impressions. We constantly
+                        monitor
+                        the metrics and swiftly redjust our moves to deliver better results.
+                    </p>
+                </div>
+                <div class="services__card">
+                    <img class="services__img" src="images/funnel.png" alt="weewin funnel illustration" />
+                    <h3 class="services__title">A funnel, not a website</h3>
+                    <p class="services__desc">
+
+                        We work holisitcally with what you have - from your branding, to your product, marketing and
+                        sales -
+                        and transform it into one cohesive, digital journey.
+                    </p>
+                </div>
+                <div class="services__card">
+                    <img class="services__img" src="images/rating.png" alt="weewin experts illustration" />
+                    <h3 class="services__title">Specialists, not account managers</h3>
+                    <p class="services__desc">
+                        our team of full stack marketers is trained in 350+ skills - these
+                        numbers keep
+                         increasing because of mentality and weekly skill acceleration workshops.
+                    </p>
+                </div>
+                <div class="services__card">
+                    <img class="services__img" src="images/sales.png" alt="weewin sales illustration" />
+                    <h3 class="services__title">Education, not pushy sales tactics</h3>
+                    <p class="services__desc">
+
+                        Acquiring clients online is getting harder every day - unless you build a relationship with
+                        your
+                        audience by creating value through engaging, relevant content and partner with WeeWin Media.
+                        ;)
+                    </p>
+                </div>
+                <div class="services__card">
+                    <img class="services__img" src="images/analytics.png" alt="weewin data illustration" />
+                    <h3 class="services__title">Data, not wild guesses</h3>
+                    <p class="services__desc">
+                        Get ready to see your business metrics turned into actionable insights, so you can grow your
+                        traffic, boost conversions, and decrease your customer acquisition cost.
+                    </p>
+                </div>
             </div>
-          </section>
+        </div>
+    </section>
 
     <!--  S E R V I C E S  -->
     <section id="services" class="services">
         <div class="services__text">
             <p class="tag">Our Services</p>
-            <h1 data-aos="fade-right" data-aos-delay="100" class="services__heading">
+            <h1 class="services__heading">
                 What We Offer
             </h1>
-            <p style="color: rgb(50, 50, 50); margin-top: 15px"
-                class="services__para">
-                At WeeWin Media we pride ourselves on working only with highquality products and ethical businesses.
-            </p>
-            <p style="margin-bottom: 0" class="services__para">
-                So if your business whether it’s a startup, e-commerce or a brand — gives value to the people in any way, ping us an email.
-                Our team is ready to scale your business, grow your reach and revenue. All hands on deck.
+            <p style="margin-top: 0;" class="services__para">
+                At WeeWin Media we pride ourselves on knowing exactly what to tug on the heartstrings and purse strings
+                of travellers and INCREASE the revenue of travel companies.
             </p>
             <a href="services.html">
                 <button class="servicepage__button services__button button">
                     View All<i class="button__arrow fa-solid fa-arrow-right-long"></i></button></a>
         </div>
-        <div class="services__overviews">
-            <div style="margin-right: 25px" class="services__overview">
-                <div class="overview__text">
-                    <h3 class="overview__heading">From Launch To Growth</h3>
-                    <p class="overview__desc">
-                        If you’re just launching, we will start by developing a detailed
-                        market strategy. Once it’s done, we’ll set up a team of our
-                        in-house and external specialists – and simply get the party
-                        started.
-                    </p>
-                </div>
-            </div>
-            <div class="services__overview">
-                <div class="overview__text">
-                    <h3 class="overview__heading">From Stagnation To Growth</h3>
-                    <p class="overview__desc">
-                        If you’re already on the market, but you’re not happy with your
-                        growth rate, we will start by reviewing your current sales and
-                        marketing strategy – and suggesting re-adjustments. If you don’t
-                        have a team to execute the changes – let us do it for you.
-                    </p>
-                </div>
-            </div>
-        </div>
         <div class="services__cards">
-            <div class="services__card">
-                <img class="services__img" src="images/social-media.png" alt="weewin social media marketing illustration" />
-                <h3 class="services__title">Social Media Marketing</h3>
+            <div style="background-color: var(--secondary-color);" class="services__card">
+                <img class="services__img" src="images/global-network.png"
+                    alt="weewin social media marketing illustration" />
+                <h3 class="services__title">Complete Digital Marketing</h3>
                 <p class="services__desc">
-                    We will create and implement the best marketing strategies
-                    specifically aligned with your vision in all the required ways.
-                    We’ll offer you end to end marketing automation where we take charge
-                    intending to give you at least 2-4x ROI.
+                    We create and execute Marketing Strategies exclusively for your brand, that guarantees revenue
+                    growth in your business.
                 </p>
 
             </div>
-            <div class="services__card">
+            <div style="background-color: var(--secondary-color);" class="services__card">
+                <img class="services__img" src="images/social-media.png"
+                    alt="weewin social media marketing illustration" />
+                <h3 class="services__title">Social Media Marketing</h3>
+                <p class="services__desc">
+                    We'll create and implement the best marketing strategies
+                    aligned with your vision in all ways.
+                    We’ll offer you end to end marketing automation where we take charge
+                    of providing you at least 2-4x ROI.
+                </p>
+
+            </div>
+            <div style="background-color: var(--secondary-color);" class="services__card">
                 <img class="services__img" src="images/paid.png" alt="weewin paid advertisement illustration" />
                 <h3 class="services__title">Paid Advertisement</h3>
                 <p class="services__desc">
-                    We’ll run psychologically driven advertising campaigns that will
-                    lead to more sales, accelerated client acquisition and scaling of
+                    We’ll run psychology driven advertising campaigns that will
+                    lead to more sales, accelerated client acquisition and scaling
                     the brand. Be it Facebook, Instagram, YouTube, or Google we do it
                     all.
                 </p>
             </div>
-            <div class="services__card">
+            <div style="background-color: var(--secondary-color);" class="services__card">
                 <img class="services__img" src="images/growth.png" alt="weewin social media growth illustration" />
                 <h3 class="services__title">Social Media Growth</h3>
                 <p class="services__desc">
@@ -302,109 +293,148 @@
                     better brand reputation, increase unique views and engagement.
                 </p>
             </div>
-            <div class="services__card">
+            <div style="background-color: var(--secondary-color);" class="services__card">
                 <img class="services__img" src="images/seo.png" alt="weewin seo illustration" />
                 <h3 class="services__title">Search Engine Optimisation (SEO)</h3>
                 <p class="services__desc">
-                    We will help your amazing content catch more eyeballs through our
-                    latest SEO strategies and optimisation on YouTube.
+                    We will help your amazing content catch more eyeballs through our latest SEO strategies and optimisation on YouTube.
                 </p>
             </div>
-            <div class="services__card">
+            <div style="background-color: var(--secondary-color);" class="services__card">
                 <img class="services__img" src="images/web-development.png" alt="weewin web development illustration" />
                 <h3 class="services__title">Web Development</h3>
                 <p class="services__desc">
-                    We will build your amazing website by understanding the psychology
-                    of your target audience, and beautifully design it in a way to
+                    We will build your website by understanding the psychology
+                    of your target audience, and design it to
                     achieve maximum conversion and increase Brand reputation.
                 </p>
             </div>
         </div>
 
     </section>
+    <div style="margin-bottom: 0px;" class="skew">
+        <div class="unskew">
+            <section class="business">
+                <p class="tag">Are You A Fit?</p>
+                <h1 style="color: var(--tirtary-color)" class="business__heading">Brands We Serve</h1>
+                <div class="business__content">
+                    <div class="business__card">
+                        <img class="business__img" src="images/around.png" alt="weewin ecommerce illustration" />
+                        <h2 class="business__title">Travel Agencies</h2>
+                        <p class="business_desc">
+                            We will make decisions based on data and achieve the maximum return from your budget with our brilliantly blended strategy.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 0" class="business__card">
+                        <img class="business__img" src="images/destination.png"
+                            alt="weewin personal brand illustration" />
+                        <h2 class="business__title">Tour Operators</h2>
+                        <p class="business_desc">
+                            We will achieve the maximum return with our strategy, creativity and content into successful campaigns that drive engagement and commercial success.
+                        </p>
+                    </div>
+                    <div class="business__card">
+                        <img class="business__img" src="images/rocket.png" alt="weewin startup illustration" />
+                        <h2 class="business__title">Startups</h2>
+                        <p class="business_desc">
+                            We will create an end-to-end marketing strategy that promotes your
+                            brand, scales your traffic and gets you relevant leads.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 
-    <section class="business">
-        <p class="tag">Are You A Fit?</p>
-        <h1 class="business__heading">Brands We Serve</h1>
-        <div class="business__content">
-            <div data-aos="fade-right" data-aos-delay="100" class="business__card">
-                <img class="business__img" src="images/rocket.png" alt="weewin startup illustration" />
-                <h2 class="business__title">Startups</h2>
-                <p class="business_desc">
-                    We will create an end-to-end marketing strategy that promotes your
-                    brand, scales your traffic and gets you relevant leads.
-                </p>
-            </div>
-            <div data-aos="fade-right" data-aos-delay="200" class="business__card">
-                <img class="business__img" src="images/shopping-cart.png" alt="weewin ecommerce illustration" />
-                <h2 class="business__title">eCommerce</h2>
-                <p class="business_desc">
-                    We will implement an end-to-end marketing strategy that scales your
-                    traffic, boosts sales conversion and increases your customer
-                    lifetime value.
-                </p>
-            </div>
-            <div style="margin-bottom: 0" data-aos="fade-right" data-aos-delay="300" class="business__card">
-                <img class="business__img" src="images/brand-image.png" alt="weewin personal brand illustration" />
-                <h2 class="business__title">Personal Brands</h2>
-                <p class="business_desc">
-                    We will implement an end-to-end marketing strategy that will
-                    increase your brand reputation, engagement, and important metrics.
-                </p>
-            </div>
+    <section class="git call">
+        <div class="unskew">
+            <h1 style="color: var(--secondary-color);" class="git__heading">
+                Get Free Consultancy!
+            </h1>
+            <p style="color: var(--secondary-color);" class="git__text">
+                Give us 30 mins and we will create a custom strategy for your digital success.
+            </p>
+            <a href="contact.html">
+                <button style="margin-bottom: 0;" class="services__button button">
+                    Book A Free Business Strategy Call<i
+                        class="button__arrow fa-solid fa-arrow-right-long"></i></button></a>
         </div>
     </section>
 
-    <section id="services" class="servicespage">
-        <div class="services__text">
-          <p class="tag">WeeWin Is Best!</p>
-          <h1 data-aos="fade-right" data-aos-delay="100" class="services__heading">
-            Why Trust Us?
-          </h1>
-          <p style="margin-top: 15px;" class="services__para">Why not?
-            Working with us is a simple two way street.
-            We collaborate to help you make more money for which we get paid. 
-            We intend to get a minimum of 2-4x ROI with our Marketing expertise.</p>
+    <section style="margin-bottom: 100px;" id="services" class="servicespage skew">
+        <div class="unskew">
+            <div class="services__text">
+                <p class="tag">WeeWin Is Best!</p>
+                <h1 class="services__heading">
+                    Why Trust Us?
+                </h1>
+                <p style="margin-top: 15px;" class="services__para">Why not?
+                    Working with us is a simple two way street.
+                    We collaborate to help you make more money for which we get paid.</p>
+            </div>
+            <section class="testimonials">
+                <div class="testimonial">
+                    <img src="images/client1.png" alt="" class="testimonial__image">
+                    <div class="testimonial__content">I tried a lot of agencies and consultants, until WeeWin, none of
+                        them
+                        produced results. Despite the timezone difference, having an outsourced marketing team helped me
+                        with execution and helped our company grow month after month.</div>
+                    <h3 class="testimonial__name">Emily</h3>
+                    <p class="testimonial__designation">Travel Agency Founder</p>
+                </div>
+                <div class="testimonial">
+                    <img src="images/client2.png" alt="" class="testimonial__image">
+                    <div class="testimonial__content">WeeWin provided us what we needed to launch our products based B2B
+                        and
+                        B2C brand. Their team delivered human touch, encouragement, and motivation. They helped us with
+                        end-to-end marketing and brought results. Will work again.</div>
+                    <h3 class="testimonial__name">Farrel</h3>
+                    <p class="testimonial__designation">Fitness Brand Owner</p>
+                </div>
+                <div style="margin-bottom: 0;" class="testimonial">
+                    <img src="images/client3.png" alt="" class="testimonial__image">
+                    <div class="testimonial__content">Before working with WeeWin, I was unable to connect with the right people, put engaging stories, research hashtags and achieve more reach. They walked me step by step through reels, posts, stories, and the etire process.</div>
+                    <h3 class="testimonial__name">Jason</h3>
+                    <p class="testimonial__designation">eCommerce Company Founder</p>
+                </div>
+            </section>
         </div>
-        <div class="results">
-            <img src="images/testimonial1.png" alt="weewin work result" class="result">
-            <img src="images/testimonial2.jpg" alt="weewin work result two" class="result">
-        </div>
-        <div class="testimonials">
-            </p>
-            <p id="testimonial" class="testimonial">Before working with WeeWin, I couldn't make instagram work for me. I was unaware of how to connect with the right people, how to put up engaging stories, how to research hashtags or what's the way to go forward to achieve more reach. They made everything simple by walking step by step through what needs to be done from hashtags, content, reels, stories etc. If you need any help with instagram, do yourself a favor and reach out to WeeWin.</p>
-            <p class="testimonial">We have tried and tested a lot of loacal and international agencies and consultants. Until WeeWin, none of them produced results. Despite the timezone difference having an outsourced marketing team of specialists help me as a marketing director with execution and has helped our company grow month after month.</p>
-            <p class="testimonial">WeeWin Media gave us everything we needed to launch our Natural and organic products based B2B and B2C brand in the market. WeeWin's team delivered human touch, encouragement, and motivation. They helped us completely from end-to-end marketing and got us the results. We're looking forward to continuing our collaboration.</p>
-        </div>
-      </section>
+    </section>
 
-    <!-- <section class="freebie">
-        <img class="freebie__img" src="images/nwsletter.png" alt="">
-        <div class="freebie__text">
-            <h1 class="freebie__heading">Grab Our <span class="highlight">Marketing Ebook</span>  For Free!</h1>
-            <form class="freebie__form" action="https://formsubmit.co/contact@weewinmedia.com" method="POST" class="contact__form">
-                <input style="margin-bottom: 0; width: 70%;" name="EMAIL" type="email" id="email" class="contact__input" placeholder="Email" required>
-                <input class="freebie__input" type="hidden" name="MESSAGE" value="I want your Free Marketing Ebook!">
-                <button type="submit" style="margin: 20px 0; margin-left: auto; margin-bottom: 0;" class="button button--hover button--round button--contact">
-                    Let's Go!
-                </button>
-            </form>
+    <section class="cs">
+        <h1 class="cs__heading">Case Studies</h1>
+        <div class="cs__casestudies">
+            <a href="casestudy-one.html" class="cs__casestudy">
+                <img class="cs__image" src="images/cs3.jpg" alt="">
+                <h3 class="cs__title">Achieved Facebook Ads 15x ROAS</h3>
+            </a>
+            <a href="casestudy-two.html" class="cs__casestudy">
+                <img class="cs__image" src="images/cs2.jpg" alt="">
+                <h3 class="cs__title">Tripled Monthly Revenue</h3>
+            </a>
+            <a style="margin-bottom: 0;" href="casestudy-three.html" class="cs__casestudy">
+                <img class="cs__image" src="images/cs1.jpg" alt="">
+                <h3 class="cs__title">4.1x Revenue of Travel Company</h3>
+            </a>
         </div>
-    </section> -->
+    </section>
 
     <section class="git">
-        <h1 data-aos="fade-up" data-aos-delay="100" class="git__heading">
-            Get In Touch!
-        </h1>
-        <p data-aos="fade-up" data-aos-delay="200" class="git__text">
-            Ready to launch or grow your business online? Once you get in touch, we
-            will connect you with one of our experienced specialists to give you a
-            few ideas on how we could collaborate.
-        </p>
-        <a href="contact.html">
-            <button data-aos="fade-up" data-aos-delay="300" class="git__button button button--hover button--round">
-                LET'S Talk
-            </button></a>
+        <div class="unskew">
+            <h1 class="git__heading">
+                Get In Touch!
+            </h1>
+            <p class="git__text">
+                Ready to launch or grow your business online? Once you get in touch, we
+                will connect you with one of our experienced specialists to give you a
+                few ideas on how we could collaborate.
+            </p>
+            <a href="contact.html">
+                <butto style="width: 135px; margin-bottom: 0;" class="git__button button button--hover button--round">
+                    LET'S TALK
+                </butto>
+            </a>
+        </div>
     </section>
 
     <!--  F O O T E R  -->
@@ -439,7 +469,7 @@
     <a href="contact.html">
         <button style="
           background-color: var(--tirtary-color);
-          color: var(--primary-color);
+          color: var(--secondary-color);
         " class="contact__button button button--hover button--round">
             GET IN TOUCH
         </button></a>
@@ -473,7 +503,7 @@
         link5.style.fontSize = "3rem";
     }
     let testimonial = document.getElementById('testimonial')
-    if (width<1000) {
+    if (width < 1000) {
         testimonial.style.marginTop = '0'
     }
 </script>

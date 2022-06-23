@@ -6,10 +6,11 @@
   outline: none;
   background-color: transparent;
   border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
   display: block;
   margin: 25px 0;
-  font-family: 'Poppins', sans-serif;
-  transition: .2s ease;
+  font-family: "Poppins", sans-serif;
+  transition: 0.2s ease;
 }
 
 .button--hover:hover {

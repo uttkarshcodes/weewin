@@ -31,6 +31,10 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet" />
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Arsenal&family=Montserrat&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -64,74 +68,103 @@
     <!-- <link rel="stylesheet" href="styles/navbar.css"> -->
 
     <title>Contact | WeeWin Media</title>
+
+    <style>
+        @media only screen and (max-width: 1000px) {
+            .contact__para {
+                width: auto;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .contact__para {
+                text-align: left;
+            }
+        }
+
+        @media only screen and (max-width: 610px) {
+            #ch2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            #ch2 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <!--  H E R O  -->
-    <section class="hero">
-        <navbar class="navbar">
-            <a href="index.html"><img src="images/weewinlogo.png" alt="" class="navbar__logo" /></a>
-            <ul class="navbar__links">
-                <!-- <a href="" class="navbar__link">Home</a>
+    <navbar class="navbar">
+        <a href="index.html"><img src="images/weewinlogo.png" alt="" class="navbar__logo" /></a>
+        <ul class="navbar__links">
+            <!-- <a href="" class="navbar__link">Home</a>
                 <a href="" class="navbar__link">Services</a> -->
-                <a href="index.html" class="navbar__link">Home</a>
-                <a id="rmv" href="contact.html" class="navbar__link">Contact</a>
-            </ul>
-            <div id="button">
-                <div id="bars"></div>
-            </div>
-            <section id="menu">
-                <ul class="menu__links">
-                    <a id="link5" style="margin-top: 0; font-size: 5rem" href="index.html" class="menu__link">Home</a>
-                    <a id="link1" style="font-size: 5rem" href="services.html" class="menu__link">Services</a>
-                    <a id="link2" style="font-size: 5rem" href="contact.html" class="menu__link">Contact</a>
-                    <a id="link3" style="margin-bottom: 0; font-size: 5rem" href="about.html"
-                        class="menu__link">About</a>
-                    <a id="link4" style="margin-bottom: 0; font-size: 5rem" href="resources.html"
-                        class="menu__link">Reources</a>
-                </ul>
-                <div class="menu__socials">
-                    <a href="https://instagram.com/weewinmedia">
-                        <div class="menu__icon">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                    </a>
-                    <a href="https://twitter.com/WeeWinMedia?t=mvoPTCevJMrmXmg3O8ydBg&s=09">
-                        <div class="menu__icon"><i class="fa-brands fa-twitter"></i></div>
-                    </a>
-                    <a href="https://www.linkedin.com/company/weewin">
-                        <div class="menu__icon">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-                    </a>
-                    <a href="https://youtube.com/channel/UCnYLVz9WVzP9FP-OsjSkWDw">
-                        <div class="menu__icon">
-                            <i class="fa-brands fa-youtube"></i>
-                        </div>
-                    </a>
-                </div>
-            </section>
-        </navbar>
-        <div class="contacthero">
-            <h1 data-aos="fade-right" data-aos-delay="100" class="contacthero__heading">
-                Contact Us
-            </h1>
-            <p data-aos="fade-right" data-aos-delay="200" class="contacthero__tagline">
-                Fill out the form below so we can learn more about your business, its strengths and challenges. We will then get you in touch with one of WeeWin’s senior specialists, experienced in growing your type of businesses.
-            </p>
-            <a href="#contact">
-                <button data-aos="fade-right" data-aos-delay="300" style="margin: 20px 0"
-                    class="button button--hover button--round">
-                    Get me going!
-                </button>
-            </a>
+            <a id="home" href="index.html" class="navbar__link">Home</a>
+            <a id="rmv" href="contact.html" class="navbar__link">Contact</a>
+            <a id="rmv" href="services.html" class="navbar__link">Services</a>
+        </ul>
+        <div id="button">
+            <div id="bars"></div>
         </div>
-    </section>
+        <section id="menu">
+            <ul class="menu__links">
+                <a id="link5" style="margin-top: 0; font-size: 5rem" href="index.html" class="menu__link">Home</a>
+                <a id="link1" style="font-size: 5rem" href="services.html" class="menu__link">Services</a>
+                <a id="link2" style="font-size: 5rem" href="contact.html" class="menu__link">Contact</a>
+                <a id="link3" style="margin-bottom: 0; font-size: 5rem" href="about.html" class="menu__link">About</a>
+                <a id="link4" style="margin-bottom: 0; font-size: 5rem" href="resources.html"
+                    class="menu__link">Resources</a>
+            </ul>
+            <div class="menu__socials">
+                <a href="https://instagram.com/weewinmedia">
+                    <div class="menu__icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="https://twitter.com/WeeWinMedia?t=mvoPTCevJMrmXmg3O8ydBg&s=09">
+                    <div class="menu__icon"><i class="fa-brands fa-twitter"></i></div>
+                </a>
+                <a href="https://www.linkedin.com/company/weewin">
+                    <div class="menu__icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </a>
+                <a href="https://youtube.com/channel/UCnYLVz9WVzP9FP-OsjSkWDw">
+                    <div class="menu__icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </navbar>
+    <!-- <div class="contacthero">
+        <h1 data-aos="fade-right" data-aos-delay="100" class="contacthero__heading">
+            Contact Us
+        </h1>
+        <p data-aos="fade-right" data-aos-delay="200" class="contacthero__tagline">
+            Fill out the form below so we can learn more about your business, its strengths and challenges. We will
+            then get you in touch with one of WeeWin’s senior specialists, experienced in growing your type of
+            businesses.
+        </p>
+        <a href="#contact">
+            <button data-aos="fade-right" data-aos-delay="300" style="margin: 20px 0"
+                class="button button--hover button--round">
+                Get me going!
+            </button>
+        </a>
+    </div> -->
 
     <!--  C O N T A C T  -->
     <section id="contact" class="contact">
         <div class="contact__two">
-            <h1 class="contact__tagline">Let's make it happen!</h1>
+            <h1 class="contact__tagline">Contact Us</h1>
+            <p class="contact__para">Fill out the form below so we can learn more about your business, its strengths and
+                challenges. We will then get you in touch with one of WeeWin’s senior specialists, experienced in
+                growing your type of businesses.</p>
             <form action="https://formsubmit.co/contact@weewinmedia.com" method="POST" class="contact__form">
                 <input name="name" type="text" id="name" class="contact__input" placeholder="Name" required />
                 <input name="email" type="email" id="email" class="contact__input" placeholder="Email" required />
@@ -144,7 +177,7 @@
                     <option value="Freelancer">Freelancer</option>
                     <option value="Freelancer">Other</option>
                 </select>
-                <input name="url" type="url" id="url" class="contact__input" placeholder="Website / Social Media"
+                <input name="url" type="url" id="url" class="contact__input" placeholder="Website / Social Media (URL)"
                     required />
                 <select name="biztype" type="text" id="biztype" class="" required>
                     <option value="Startup">Business Type</option>
@@ -164,20 +197,22 @@
             </form>
         </div>
         <div class="contact__one">
-            <h1 data-aos="fade-up" data-aos-delay="100" class="contact__tagline">
-                Say hi, we won't bite.
-            </h1>
-            <div class="contact__details">
-                <a href="mailto:viraj@weewinmedia.com" class="link">
-                    <p data-aos="fade-up" data-aos-delay="200" style="margin-bottom: 5px">
-                        viraj@weewinmedia.com
-                    </p>
-                </a>
-                <a href="mailto:contact@weewinmedia.com" class="link">
-                    <p data-aos="fade-up" data-aos-delay="300">
-                        contact@weewinmedia.com
-                    </p>
-                </a>
+            <div class="unskew">
+                <h1 id="ch2" data-aos="fade-up" data-aos-delay="100" class="contact__tagline">
+                    Say hi, we won't bite.
+                </h1>
+                <div class="contact__details">
+                    <a href="mailto:viraj@weewinmedia.com" class="link">
+                        <p data-aos="fade-up" data-aos-delay="200" style="margin-bottom: 5px">
+                            viraj@weewinmedia.com
+                        </p>
+                    </a>
+                    <a href="mailto:contact@weewinmedia.com" class="link">
+                        <p data-aos="fade-up" data-aos-delay="300">
+                            contact@weewinmedia.com
+                        </p>
+                    </a>
+                </div>
             </div>
         </div>
     </section>

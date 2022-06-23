@@ -7,49 +7,48 @@
 }
 
 .abouthero__heading {
+  font-family: "Tenor Sans", sans-serif;
   font-size: 2.5rem;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
 .abouthero__img {
-  width: 100%;
-  background: linear-gradient(to right, #2c5da74a, #2c5da74a),
-    url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170)
-      no-repeat;
+  background: url(backgroud.png) no-repeat;
   background-size: cover;
-  background-position: center;
   height: 500px;
+  width: 100%;
 }
 
 .aboutpage__content {
-    display: flex;
-    margin: 0 100px;
-    justify-content: space-between;
-    margin-bottom: 150px;
+  display: flex;
+  margin: 0 100px;
+  justify-content: space-between;
+  margin-bottom: 150px;
 }
 
 .company__logo {
-    height: 40px;
-    margin-bottom: 25px;
+  height: 40px;
+  margin-bottom: 25px;
 }
 
 .company__title {
-    margin: 25px 0 10px 0;
-    display: block;
-    font-weight: bold;
+  margin: 25px 0 10px 0;
+  display: block;
+  font-weight: bold;
 }
 
 .story {
-    width: 1000px;
+  width: 1000px;
 }
 
 .story__heading {
-    font-size: 2rem;
-    margin: 30px 0;
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 2rem;
+  margin: 30px 0;
 }
 
 .story__para {
-    color:  rgb(100, 100, 100);
 }
 
 .story__bold {
