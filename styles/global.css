@@ -1261,6 +1261,9 @@ a {
   .cs {
     margin: 150px 25px;
   }
+  .ourstory__story {
+    font-size: small;
+  }
 }
 
 @media only screen and (max-width: 450px) {
