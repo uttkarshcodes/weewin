@@ -33,6 +33,40 @@
   height: 500px;
 }
 
+.metrics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.metric {
+  margin: 25px;
+  padding: 50px;
+  margin-left: 0;
+  border: 3px solid var(--secondary-color);
+}
+
+.metric--one {
+  width: 370px;
+  height: 190px;
+}
+
+.metric--two {
+  width: 370px;
+  height: 162px;
+}
+
+.metric--three {
+  width: 370px;
+  height: 162px;
+}
+
+.metric:hover {
+  color: var(--tirtary-color);
+  background-color: var(--secondary-color);
+}
+
 @media only screen and (max-width: 1150px) {
   .casestudy--imagetwo {
     height: 450px;
@@ -102,5 +136,38 @@
   }
   .casestudy--imageone {
     height: 175px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .metric--one {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .metric--two {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .metric--three {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .metric {
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .metrics {
+    font-size: 1rem;
   }
 }
