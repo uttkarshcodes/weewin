@@ -406,8 +406,9 @@ a {
   margin: 100px 0;
   background-color: #f2f2f2;
   color: var(--primary-color);
-  width: 50%;
+  width: 400px;
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  margin-right: 50px;
 }
 
 .services__cards {
@@ -682,6 +683,13 @@ a {
 /* MEDIA QUERRIES */
 
 /* NAVBAR */
+
+@media only screen and (max-width: 1600px) {
+  .services__overview {
+    margin-right: 20px;
+    width: 360px;
+  }
+}
 
 @media only screen and (max-width: 1000px) {
   .contact__button {
